@@ -21,7 +21,7 @@
 
   /* Glass */
   --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-glow: rgba(255, 107, 107, 0.08);
+  --glass-glow: rgba(163, 230, 53, 0.08);
 
   /* Text */
   --text-primary: #f0f0f5;
@@ -29,31 +29,31 @@
   --text-tertiary: rgba(240, 240, 245, 0.35);
 
   /* Accents */
-  --accent-coral: #ff6b6b;
-  --accent-orange: #ff8e53;
-  --accent-gold: #ffc857;
-  --accent-green: #34d399;
-  --accent-blue: #60a5fa;
-  --accent-purple: #a78bfa;
+  --accent-coral: #a3e635;
+  --accent-orange: #FACC15;
+  --accent-gold: #FDE047;
+  --accent-green: #84cc16;
+  --accent-blue: #bef264;
+  --accent-purple: #65a30d;
   --accent-red: #f87171;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #ff6b6b, #ff8e53, #ffc857);
-  --gradient-ring: conic-gradient(from 220deg, #ff6b6b, #ff8e53, #ffc857, #ff6b6b);
-  --gradient-green: linear-gradient(135deg, #34d399, #6ee7b7);
-  --gradient-blue: linear-gradient(135deg, #60a5fa, #93c5fd);
-  --gradient-purple: linear-gradient(135deg, #a78bfa, #c4b5fd);
+  --gradient-primary: linear-gradient(135deg, #a3e635, #84cc16, #FACC15);
+  --gradient-ring: conic-gradient(from 220deg, #a3e635, #84cc16, #FACC15, #a3e635);
+  --gradient-green: linear-gradient(135deg, #84cc16, #a3e635);
+  --gradient-blue: linear-gradient(135deg, #a3e635, #bef264);
+  --gradient-purple: linear-gradient(135deg, #bef264, #FDE047);
 
   /* Protein / Carbs / Fat colors */
-  --protein-color: #60a5fa;
-  --carbs-color: #fbbf24;
-  --fat-color: #f472b6;
+  --protein-color: #a3e635;
+  --carbs-color: #FACC15;
+  --fat-color: #f59e0b;
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 30px rgba(255, 107, 107, 0.15);
+  --shadow-glow: 0 0 30px rgba(163, 230, 53, 0.15);
 
   /* Borders */
   --radius-sm: 10px;
@@ -380,8 +380,8 @@ body::after {
 }
 
 .macro-protein .macro-bar-fill { background: var(--gradient-blue); }
-.macro-carbs .macro-bar-fill { background: linear-gradient(90deg, #fbbf24, #f59e0b); }
-.macro-fat .macro-bar-fill { background: linear-gradient(90deg, #f472b6, #ec4899); }
+.macro-carbs .macro-bar-fill { background: linear-gradient(90deg, #FACC15, #f59e0b); }
+.macro-fat .macro-bar-fill { background: linear-gradient(90deg, #f59e0b, #d97706); }
 
 /* --- Section Styling --- */
 .section-header {
@@ -612,7 +612,7 @@ body::after {
 }
 
 .btn-danger {
-  background: linear-gradient(135deg, #f87171, #ef4444);
+  background: linear-gradient(135deg, #a3e635, #84cc16);
   color: #fff;
   border: none;
   border-radius: var(--radius-sm);
@@ -621,7 +621,7 @@ body::after {
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(248, 113, 113, 0.3);
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
   transition: transform var(--duration-fast) var(--ease-spring),
               box-shadow var(--duration-fast) ease;
 }

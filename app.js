@@ -226,9 +226,9 @@
     gradient.setAttribute('y2', '100%');
 
     const stops = [
-      { offset: '0%', color: '#ff6b6b' },
-      { offset: '50%', color: '#ff8e53' },
-      { offset: '100%', color: '#ffc857' },
+      { offset: '0%', color: '#a3e635' },
+      { offset: '50%', color: '#84cc16' },
+      { offset: '100%', color: '#FACC15' },
     ];
 
     stops.forEach((s) => {
@@ -463,9 +463,9 @@
 
     // Icon via DOMParser (security: avoids innerHTML)
     const icons = {
-      success: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#34d399" stroke-width="2"/><path d="M7 10L9 12L13 8" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      success: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a3e635" stroke-width="2"/><path d="M7 10L9 12L13 8" stroke="#a3e635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
       error: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#f87171" stroke-width="2"/><path d="M7 7L13 13M13 7L7 13" stroke="#f87171" stroke-width="2" stroke-linecap="round"/></svg>',
-      info: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#60a5fa" stroke-width="2"/><path d="M10 9V14" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="7" r="1" fill="#60a5fa"/></svg>',
+      info: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#FACC15" stroke-width="2"/><path d="M10 9V14" stroke="#FACC15" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="7" r="1" fill="#FACC15"/></svg>',
     };
 
     const iconDoc = new DOMParser().parseFromString(icons[type] || icons.info, 'image/svg+xml');
